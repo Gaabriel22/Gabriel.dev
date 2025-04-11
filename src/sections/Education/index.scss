@@ -1,0 +1,74 @@
+@use "../../styles/base/variables" as *;
+
+.education {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-background;
+  padding: $spacing-lg;
+
+  .container {
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+
+    h2 {
+      font-size: 2rem;
+      color: $color-primary;
+      margin-bottom: $spacing-lg;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-md;
+
+      @media (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .card {
+        background-color: lighten($color-background, 5%);
+        border: 1px solid $color-secondary;
+        border-radius: 12px;
+        padding: $spacing-md;
+        text-align: left;
+        flex: 1 1 300px;
+        max-width: 300px;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: translateY(-5px);
+        }
+
+        .period {
+          font-size: 0.9rem;
+          color: $color-highlight;
+          font-weight: bold;
+          margin-bottom: 0.5rem;
+          display: block;
+        }
+
+        h3 {
+          font-size: 1.2rem;
+          color: $color-text;
+          margin-bottom: 0.25rem;
+        }
+
+        h4 {
+          font-size: 1rem;
+          color: $color-secondary;
+          margin-bottom: 0.75rem;
+        }
+
+        p {
+          font-size: 0.95rem;
+          color: $color-text;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
