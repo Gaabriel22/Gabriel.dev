@@ -1,5 +1,5 @@
 import "./index.scss"
-import GitHubIcon from "../../components/icons/GitHubIcon"
+import { SiGithub } from "react-icons/si"
 
 const projects = [
   {
@@ -44,7 +44,7 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 className="github-button"
               >
-                <GitHubIcon />
+                <SiGithub size={20} />
                 Ver no GitHub
               </a>
             </div>
