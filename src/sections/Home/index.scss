@@ -1,0 +1,39 @@
+@use "../../styles/base/variables" as *;
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: $color-background;
+  padding: $spacing-lg;
+
+  .content {
+    max-width: 800px;
+
+    h1 {
+      font-size: 3rem;
+      color: $color-primary;
+      margin-bottom: $spacing-sm;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: $color-text;
+      margin-bottom: $spacing-md;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      background-color: $color-highlight;
+      color: $color-text;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: $color-primary;
+      }
+    }
+  }
+}
