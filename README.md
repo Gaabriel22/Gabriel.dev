@@ -1,54 +1,71 @@
-# React + TypeScript + Vite
+# 💻 Gabriel.dev — Portfólio Pessoal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é meu site pessoal em formato de one-page, onde apresento quem sou, minha formação, projetos, serviços e formas de contato. Foi desenvolvido com foco em performance, acessibilidade e visual moderno, utilizando tecnologias atuais e boas práticas de desenvolvimento.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Funcionalidades
 
-## Expanding the ESLint configuration
+- Apresentação pessoal com transições suaves (AOS animations)
+- Seções com tela cheia e navegação por âncoras
+- Responsivo para dispositivos móveis (com menu dropdown)
+- Efeitos de scroll e destaque dinâmico no header
+- Seção de projetos integrável ao GitHub
+- Favicon personalizado
+- Tema minimalista com paleta elegante em light/dark mode (em breve)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🧰 Tecnologias Utilizadas
+
+- **React + Vite**
+- **TypeScript**
+- **SCSS Modules**
+- **AOS (Animate On Scroll)**
+- **Lucide Icons**
+- **Responsividade com media queries**
+
+---
+
+## 📂 Estrutura do Projeto
+
+```bash
+/
+├── public/               # favicon
+├── src/           
+│   ├── components/       # componentes reutilizáveis (Header, Footer, etc.)
+│   ├── sections/         # seções da one-page (Home, Sobre, Projetos, etc.)
+│   ├── styles/           # variáveis SCSS e base global
+│   ├── App.tsx           # componente principal da aplicação
+│   └── main.tsx          # ponto de entrada da aplicação
+├── README.md             # este arquivo
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📦 Instalação e Execução
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+# Clone o repositório
+git clone https://github.com/Gaabriel22/meu-site-pessoal
+
+# Instale as dependências
+npm install
+
+# Rode o projeto localmente
+npm run dev
 ```
+
+---
+
+## 📫 Contato
+
+Você pode me encontrar em:
+
+- [LinkedIn](https://www.linkedin.com/in/gabrielamaral22/)
+- [GitHub](https://github.com/Gaabriel22)
+- Ou diretamente pela [seção de contato](#contact) no site.
+
+---
+
+Feito com 💙 por Gabriel
