@@ -1,4 +1,7 @@
 import "./styles/App.scss"
+import AOS from "aos"
+
+import { useEffect } from "react"
 
 import Header from "./components/Header"
 import Footer from "./components/Footer"
@@ -12,6 +15,13 @@ import Projects from "./sections/Projects"
 import Contact from "./sections/Contact"
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+    })
+  }, [])
+  
   return (
     <>
       <Header />
