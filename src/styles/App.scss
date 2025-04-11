@@ -1,5 +1,5 @@
-@import "./base/variables";
-@import "./base/reset";
+@use "./base/variables" as *;
+@use "./base/reset" as *;
 
 // Estilos globais
 body {
