@@ -47,7 +47,7 @@ Este é meu site pessoal em formato de one-page, onde apresento quem sou, minha 
 
 ```bash
 # Clone o repositório
-git clone https://github.com/Gaabriel22/meu-site-pessoal
+git clone https://github.com/Gaabriel22/Gabriel.dev
 
 # Instale as dependências
 npm install
