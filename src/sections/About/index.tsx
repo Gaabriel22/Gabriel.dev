@@ -33,7 +33,7 @@ const About = () => {
 
         <a
           data-aos="zoom-in"
-          data-aos-delay="600"
+          data-aos-delay="100"
           href="/docs/CV-Gabriel-Amaral.pdf"
           className="btn"
           target="_blank"
