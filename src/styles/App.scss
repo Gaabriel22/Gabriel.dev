@@ -1,0 +1,19 @@
+@import "./base/variables";
+@import "./base/reset";
+
+// Estilos globais
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+section {
+  min-height: 100vh;
+  padding: $spacing-lg $spacing-md;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+}
