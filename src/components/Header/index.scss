@@ -18,6 +18,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
 
   .logo {
@@ -56,9 +57,52 @@
     }
   }
 
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: $color-text;
+    cursor: pointer;
+    z-index: 1100;
+  }
+
+  .dropdown-menu {
+    display: none;
+  }
+
   @media (max-width: 768px) {
     .nav-links {
       display: none;
+    }
+
+    .menu-toggle {
+      display: block;
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: rgba(15, 15, 15, 0.95);
+      padding: 1rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      border-radius: 0 0 0.5rem 0.5rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+
+      li a {
+        color: $color-text;
+        font-weight: 500;
+
+        &.active {
+          color: $color-primary;
+        }
+
+        &:hover {
+          color: $color-primary;
+        }
+      }
     }
   }
 }
