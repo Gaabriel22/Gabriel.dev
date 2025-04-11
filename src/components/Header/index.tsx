@@ -1,14 +1,43 @@
 import { useEffect, useState } from "react"
 import "./index.scss"
 
+const sections = [
+  "home",
+  "about",
+  "education",
+  "services",
+  "projects",
+  "contact",
+]
+
 const Header = () => {
   const [scrolled, setScrolled] = useState(false)
+  const [activeSection, setActiveSection] = useState("home")
 
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 50)
+
+      const scrollPosition = window.scrollY + window.innerHeight / 2
+
+      for (const id of sections) {
+        const el = document.getElementById(id)
+        if (el) {
+          const { offsetTop, offsetHeight } = el
+          if (
+            scrollPosition >= offsetTop &&
+            scrollPosition < offsetTop + offsetHeight
+          ) {
+            setActiveSection(id)
+            break
+          }
+        }
+      }
     }
+
     window.addEventListener("scroll", onScroll)
+    onScroll() // inicializa no load
+
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
 
@@ -17,24 +46,26 @@ const Header = () => {
       <nav className="container">
         <h1 className="logo">Gabriel.dev</h1>
         <ul className="nav-links">
-          <li>
-            <a href="#home">Início</a>
-          </li>
-          <li>
-            <a href="#about">Sobre</a>
-          </li>
-          <li>
-            <a href="#education">Formação</a>
-          </li>
-          <li>
-            <a href="#services">Serviços</a>
-          </li>
-          <li>
-            <a href="#projects">Projetos</a>
-          </li>
-          <li>
-            <a href="#contact">Contato</a>
-          </li>
+          {sections.map((section) => (
+            <li key={section}>
+              <a
+                href={`#${section}`}
+                className={activeSection === section ? "active" : ""}
+              >
+                {section === "home"
+                  ? "Início"
+                  : section === "about"
+                  ? "Sobre"
+                  : section === "education"
+                  ? "Formação"
+                  : section === "services"
+                  ? "Serviços"
+                  : section === "projects"
+                  ? "Projetos"
+                  : "Contato"}
+              </a>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
