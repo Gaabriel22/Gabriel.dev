@@ -5,10 +5,10 @@ const Services = () => {
   return (
     <section className="services" id="services">
       <div className="container">
-        <h2>Serviços</h2>
+        <h2 data-aos="fade-up">Serviços</h2>
 
         <div className="cards">
-          <div className="card">
+          <div className="card" data-aos="zoom-in" data-aos-delay="100">
             <Code size={32} />
             <h3>Frontend</h3>
             <p>
@@ -17,7 +17,7 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="card">
+          <div className="card" data-aos="zoom-in" data-aos-delay="200">
             <Server size={32} />
             <h3>Backend</h3>
             <p>
@@ -26,7 +26,7 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="card">
+          <div className="card" data-aos="zoom-in" data-aos-delay="300">
             <Cloud size={32} />
             <h3>Web Completa</h3>
             <p>
@@ -35,7 +35,7 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="card">
+          <div className="card" data-aos="zoom-in" data-aos-delay="400">
             <Bug size={32} />
             <h3>Correção de Bugs</h3>
             <p>
@@ -44,7 +44,7 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="card">
+          <div className="card" data-aos="zoom-in" data-aos-delay="500">
             <Wrench size={32} />
             <h3>Melhoria de Código</h3>
             <p>
@@ -53,7 +53,7 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="card">
+          <div className="card" data-aos="zoom-in" data-aos-delay="600">
             <Sparkles size={32} />
             <h3>Consultoria Técnica</h3>
             <p>

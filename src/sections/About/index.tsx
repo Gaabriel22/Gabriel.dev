@@ -4,13 +4,13 @@ const About = () => {
   return (
     <section className="about" id="about">
       <div className="container">
-        <h2>Sobre Mim</h2>
-        <p>
+        <h2 data-aos="fade-up">Sobre Mim</h2>
+        <p data-aos="fade-up" data-aos-delay="200">
           Sou um desenvolvedor focado em criar soluções inovadoras e eficientes,
           com atenção aos detalhes e foco em entregar resultados reais.
         </p>
 
-        <div className="info">
+        <div className="info" data-aos="fade-up" data-aos-delay="400">
           <ul>
             <li>
               <strong>Nome:</strong> Gabriel Amaral
@@ -32,6 +32,8 @@ const About = () => {
         </div>
 
         <a
+          data-aos="zoom-in"
+          data-aos-delay="600"
           href="/docs/CV-Gabriel-Amaral.pdf"
           className="btn"
           target="_blank"

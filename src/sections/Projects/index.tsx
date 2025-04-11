@@ -31,11 +31,16 @@ const Projects = () => {
   return (
     <section className="projects" id="projects">
       <div className="container">
-        <h2>Projetos</h2>
+        <h2 data-aos="fade-up">Projetos</h2>
 
         <div className="cards">
           {projects.map((project, index) => (
-            <div className="card" key={index}>
+            <div
+              className="card"
+              key={index}
+              data-aos="zoom-in"
+              data-aos-delay={100 * (index + 1)}
+            >
               <h3>{project.name}</h3>
               <p>{project.description}</p>
               <a

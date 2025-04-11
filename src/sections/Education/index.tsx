@@ -4,10 +4,10 @@ const Education = () => {
   return (
     <section className="education" id="education">
       <div className="container">
-        <h2>Formação</h2>
+        <h2 data-aos="fade-up">Formação</h2>
 
         <div className="cards">
-          <div className="card">
+          <div className="card" data-aos="fade-right" data-aos-delay="100">
             <span className="period">2022 - 2023</span>
             <h3>Graduação em Análise e Desenvolvimento de Sistemas</h3>
             <h4>UNIP</h4>
@@ -19,7 +19,7 @@ const Education = () => {
             </p>
           </div>
 
-          <div className="card">
+          <div className="card" data-aos="fade-up" data-aos-delay="200">
             <span className="period">2023 - 2024</span>
             <h3>Desenvolvimento Full Stack JavaScript</h3>
             <h4>OneBitCode</h4>
@@ -30,7 +30,7 @@ const Education = () => {
             </p>
           </div>
 
-          <div className="card">
+          <div className="card" data-aos="fade-left" data-aos-delay="300">
             <span className="period">03 / 2025 - 04 / 2025</span>
             <h3>Formação IA para Devs</h3>
             <h4>OneBitCode</h4>

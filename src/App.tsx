@@ -18,10 +18,11 @@ function App() {
   useEffect(() => {
     AOS.init({
       duration: 800,
-      once: true,
+      once: false,
     })
+    AOS.refresh()
   }, [])
-  
+
   return (
     <>
       <Header />
