@@ -26,7 +26,7 @@ const Home = () => {
           data-aos-delay="100"
           data-aos-duration="800"
         >
-          Me Contrate
+          Meu Contato
         </a>
       </div>
     </section>
